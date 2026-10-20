@@ -6,13 +6,15 @@
 :root{--bg:#1B1B1B;--card:#333333;--accent:#4AEED2;--text:#FFFFFF;--muted:rgba(255,255,255,.58);--line:rgba(255,255,255,.12)}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1350px;background:var(--bg)}
-body{font-family:'Manrope',sans-serif;color:var(--text);padding:88px 88px 80px;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+body{font-family:'Manrope',sans-serif;color:var(--text);padding:72px 88px 76px;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
 .top{display:flex;justify-content:space-between;align-items:flex-start}
-.logo{display:block;height:44px;width:auto}
+.top>div{width:100%}
+.brand{width:100%;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.logo{display:block;height:34px;width:auto}
 .eyebrow{font-size:22px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
-h1{margin-top:28px;font-size:84px;line-height:1.02;font-weight:800;letter-spacing:-.035em}
+h1{margin-top:44px;font-size:84px;line-height:1.02;font-weight:800;letter-spacing:-.035em}
 h1 span{color:var(--accent)}
-.cards{margin-top:64px;display:flex;flex-direction:column;gap:28px}
+.cards{margin-top:52px;display:flex;flex-direction:column;gap:28px}
 .card{background:var(--card);border-radius:28px;padding:44px 48px;display:grid;grid-template-columns:84px 1fr 184px;gap:0 20px;align-items:center;position:relative;overflow:hidden}
 .card::before{content:"";position:absolute;left:0;top:44px;bottom:44px;width:4px;background:var(--accent);border-radius:0 4px 4px 0}
 .icon{grid-column:3;grid-row:1;width:184px;height:184px;justify-self:end}
@@ -36,7 +38,7 @@ li b{color:var(--accent);font-weight:700}
 <body>
   <div class="top">
     <div>
-      <img class="logo" src="logo-health-circuit.png" alt="Health Circuit">
+      <div class="brand"><img class="logo" src="logo-health-circuit.png" alt="Health Circuit"></div>
       <h1>Scaling in<br><span>two directions</span></h1>
     </div>
   </div>
