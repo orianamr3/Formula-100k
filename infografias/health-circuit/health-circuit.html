@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Health Circuit</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1B1B1B;--card:#333333;--accent:#4AEED2;--text:#FFFFFF;--muted:rgba(255,255,255,.58);--line:rgba(255,255,255,.12)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;background:var(--bg)}
+body{font-family:'Manrope',sans-serif;color:var(--text);padding:88px 88px 80px;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+.top{display:flex;justify-content:space-between;align-items:flex-start}
+.eyebrow{font-size:22px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+h1{margin-top:28px;font-size:84px;line-height:1.02;font-weight:800;letter-spacing:-.035em}
+h1 span{color:var(--accent)}
+.cards{margin-top:64px;display:flex;flex-direction:column;gap:28px}
+.card{background:var(--card);border-radius:28px;padding:44px 48px;display:grid;grid-template-columns:120px 1fr;gap:0 24px;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:44px;bottom:44px;width:4px;background:var(--accent);border-radius:0 4px 4px 0}
+.num{font-size:64px;font-weight:300;color:var(--accent);line-height:1;letter-spacing:-.03em}
+.kicker{font-size:18px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.title{margin-top:14px;font-size:44px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.sub{margin-top:8px;font-size:24px;font-weight:500;color:var(--muted)}
+ul{list-style:none;margin-top:26px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+li{font-size:24px;font-weight:500;display:flex;gap:14px;align-items:baseline}
+li b{color:var(--accent);font-weight:700}
+.bottom{margin-top:auto;display:flex;align-items:center;gap:32px}
+.layers{position:relative;width:88px;height:72px;flex:none}
+.layers i{position:absolute;left:0;width:88px;height:28px;border-radius:8px}
+.layers i:first-child{top:0;background:var(--accent)}
+.layers i:last-child{top:40px;border:2px solid var(--accent)}
+.b-title{font-size:40px;font-weight:800;letter-spacing:-.02em}
+.b-title span{color:var(--accent)}
+.b-sub{margin-top:6px;font-size:24px;font-weight:500;color:var(--muted)}
+</style></head>
+<body>
+  <div class="top">
+    <div>
+      <div class="eyebrow">Health Circuit</div>
+      <h1>Scaling in<br><span>two directions</span></h1>
+    </div>
+    <svg width="150" height="150" viewBox="0 0 150 150" fill="none" style="margin-top:44px">
+      <circle cx="20" cy="130" r="9" fill="#4AEED2"/>
+      <path d="M20 130 L128 22" stroke="#4AEED2" stroke-width="4" stroke-linecap="round"/>
+      <path d="M20 130 L140 130" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="4" stroke-linecap="round"/>
+      <path d="M100 22 H128 V50" stroke="#4AEED2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M124 116 L140 130 L124 144" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="num">01</div>
+      <div>
+        <div class="kicker">New clinical vertical</div>
+        <div class="title">Respiratory health</div>
+        <div class="sub">COPD and severe asthma</div>
+        <ul>
+          <li><b>→</b>New use cases</li>
+          <li><b>→</b>Through its KHIA+ vertical</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">02</div>
+      <div>
+        <div class="kicker">Technical evolution</div>
+        <div class="title">openEHR</div>
+        <div class="sub">Structured clinical information</div>
+        <ul>
+          <li><b>→</b>Shared data models</li>
+          <li><b>→</b>Greater interoperability across systems</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="layers"><i></i><i></i></div>
+    <div>
+      <div class="b-title">Product <span>+</span> technology</div>
+      <div class="b-sub">Two layers of the same evolution.</div>
+    </div>
+  </div>
+</body></html>
